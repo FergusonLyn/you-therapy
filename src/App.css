@@ -1,0 +1,166 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+/*the first screen of the homepage*/
+.flex-container-2 {
+  display: flex;
+  flex-direction: row;
+}
+
+.left-side {
+  margin: 50px;
+  width: 40%;
+  height: 400px;
+}
+
+.left-side img {
+  width: 100%;
+  height: 100%;
+  margin-top: 50px;
+  border-radius: 10px;
+}
+
+.right-side {
+  height: 100vh;
+  width: 50%;
+}
+
+h4 {
+  margin: 20px;
+  margin-left: 80px;
+}
+
+p.text {
+  margin-top: 110px;
+  margin-left: 20px;
+  font-size: 60px;
+  text-align: center;
+  letter-spacing: 10px;
+  line-height: normal;
+}
+
+p .therapy {
+  font-weight: 700;
+}
+
+.btn {
+  width: 100%;
+  text-align: center;
+}
+
+/*styling effects on buttons*/
+button {
+  font-family: inherit;
+  font-size: 1em;
+  font-weight: 500;
+  padding: 0.6em 1.9em;
+  margin: 10px;
+  border-radius: 60px;
+  border: 1px solid transparent;
+  width: 800;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+
+.login {
+  padding: 0.6em 3em;
+  background-color: #fff;
+}
+
+.get-started {
+  background-color: #ffffffa3;
+}
+
+
+/* the description page of the homepage*/
+/*that's the little info about services provided */
+.flex-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.outerbox {
+  margin: 90px 50px 80px 50px;
+  padding: 50px 50px 50px 2px;
+  width: 22%;
+  cursor: pointer;
+}
+
+.circle {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  float: left;
+  margin-right: 30px;
+}
+
+.circle img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.headingText {
+  font-weight: 720;
+  padding: 20px;
+  margin-left: 110px;
+  width: 80px;
+  font-size: 18px;
+}
+
+.down {
+  height: 150px;
+  width: 280px;
+  margin-top: 10px;
+  padding: 5px;
+}
+
+
+/*the footer page of the homepage*/
+.flex-container-1 {
+  display: flex;
+  flex-direction: row;
+}
+
+.one {
+  margin: 50px;
+  width: 40%;
+  height: 450px;
+}
+
+.one img {
+  border-radius: 0 80% 0 0;
+  width: 100%;
+  height: 100%;
+  height: 530px;
+  margin-left: -200px;
+}
+
+.two {
+  margin: 50px;
+  width: 40%;
+  height: 400px;
+  padding: 10px;
+}
+
+/*media queries provided when screen size changes*/
+@media (max-width: 1179px) {
+  .flex-container-2  {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .flex-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
