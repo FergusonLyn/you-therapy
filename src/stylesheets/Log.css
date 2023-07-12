@@ -33,9 +33,11 @@ input {
     width: 250px;
     height: 35px;
     background-color: rgb(232, 231, 231);
-    border: 1px solid rgb(232, 231, 231) ;
+    border: none;
+    border-bottom: 1px solid rgb(232, 231, 231) ;
     margin: 15px;
     border-radius: 5px;
+    outline: none;
 }
 
 label {

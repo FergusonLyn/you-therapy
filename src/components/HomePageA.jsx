@@ -14,8 +14,8 @@ const HomePageA = () => {
                     <span className="therapy">therapy</span>
                 </p>
                 <div className="btn">
-                <NavLink to="logIn" > <button className="login" >  Login  </button>  </NavLink>
-                <NavLink to="getstarted"> <button className="get-started">Get started</button>   </NavLink>
+                <NavLink to="logIn" > <button className="login" >  Get started  </button>  </NavLink>
+                <NavLink to="getstarted"> <button className="get-started">LogIn</button>   </NavLink>
                 </div>
             </div>
             <div className="left-side">
