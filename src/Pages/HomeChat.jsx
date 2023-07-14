@@ -1,20 +1,25 @@
 import React from 'react'
-import SideBar from '../chat-components/SideBar'
-import Chat from '../chat-components/Chat'
-import "../stylesheets/chatstyles.css"
+import Nav from '../components/Nav'
 import "../stylesheets/styles.scss"
+import TherapistProfile from '../components/TherapistProfile'
 
 const HomeChat = () => {
   return (
     <div>
-        <div className="home">
-            <div className="container">
-                <SideBar />
-                <Chat />
-            </div>
-
+      <Nav />
+      <h4>Get in-touch with a therapist below</h4>
+      <div className="therapy-container">
+        <div className="right">
+            <TherapistProfile />
+            <TherapistProfile />
+            <TherapistProfile />
         </div>
-      
+        <div className="left">
+            <TherapistProfile />
+            <TherapistProfile />
+            <TherapistProfile />
+        </div>
+      </div>
     </div>
   )
 }

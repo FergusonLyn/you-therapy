@@ -1,7 +1,27 @@
 import { NavLink } from "react-router-dom"
+import { auth, googleProvider } from "../config/firebase";
+import { signInWithPopup} from "firebase/auth";
+import { useState } from "react";
+import { useNavigate, Link } from "react-router-dom";
 
 
 const HomePageA = () => {
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+
+
+  const [err, setErr] = useState(false);
+  const navigate = useNavigate();
+
+  const signInWithGoogle = async () => {
+    try {
+      await signInWithPopup(auth, googleProvider);
+      navigate("/home")
+    } catch (err) {
+      console.error(err);
+    }
+  };
+
 
   return (
     <>
@@ -14,9 +34,9 @@ const HomePageA = () => {
                     <span className="therapy">therapy</span>
                 </p>
                 <div className="btn">
-                <NavLink to="logIn" > <button className="login" >  Get started  </button>  </NavLink>
-                <NavLink to="getstarted"> <button className="get-started">LogIn</button>   </NavLink>
-                </div>
+                 <button className="login" onClick={signInWithGoogle}> Continue with Google </button>  
+                  {/* <NavLink to="getstarted"> <button className="get-started">LogIn</button>   </NavLink> */}
+                  </div>
             </div>
             <div className="left-side">
                 <img src="https://energyresourcing.com/wp-content/uploads/2022/07/mental-health-wellness-during-covid-19.jpg" alt="" />

@@ -5,13 +5,12 @@ import { getFirestore } from "firebase/firestore";
 import { getStorage } from "firebase/storage";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyABJB9lbWRxQy-PoJ48v6fLk-hHiqLs-Ic",
-  authDomain: "first-project-therapy.firebaseapp.com",
-  projectId: "first-project-therapy",
-  storageBucket: "first-project-therapy.appspot.com",
-  messagingSenderId: "622066486749",
-  appId: "1:622066486749:web:13e0a8a4cbbbaad241ba34",
-  measurementId: "G-WNKNJV0YRL",
+  apiKey: "AIzaSyBOMhy2t63b--NhLmkpZ3g1eqa7MfsGGC0",
+  authDomain: "my-therapy-9e302.firebaseapp.com",
+  projectId: "my-therapy-9e302",
+  storageBucket: "my-therapy-9e302.appspot.com",
+  messagingSenderId: "514029987539",
+  appId: "1:514029987539:web:6cd0ee822a3f1570d01626",
 };
 
 // Initialize Firebase
@@ -23,4 +22,3 @@ export const googleProvider = new GoogleAuthProvider();
 
 export const db = getFirestore(app);
 export const storage = getStorage();
-
