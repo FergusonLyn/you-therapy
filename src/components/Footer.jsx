@@ -11,7 +11,7 @@ const Footer = () => {
           />
         </div>
         <div className="two">
-          <p>
+          {/* <p> */}
             <h1> Connect with us</h1> 
             <a href="">YouTherapy@mini-project.com</a> <br />
             <h3>Main Office</h3> 
@@ -23,7 +23,7 @@ const Footer = () => {
             Facebook  <br />
             Instagram  <br />
             Twitter 
-          </p>
+          {/* </p> */}
         </div>
       </div>
     </>

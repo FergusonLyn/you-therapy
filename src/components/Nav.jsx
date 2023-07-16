@@ -14,9 +14,9 @@ const Nav = () => {
       <div className='navbar'>
       <span className="logo"><img src="https://cdn.dribbble.com/users/81906/screenshots/2971464/mental_health_logo.jpg" alt="" /></span>
       <ul>
-        <li>Home</li>
-        <li>Daily tips </li>
-        <li>Dairy</li>
+        <NavLink to=""> <li>Home</li> </NavLink>
+        <NavLink to="daily-tips"> <li>  Daily tips  </li> </NavLink>
+        <NavLink to="dairy"> <li>Dairy</li> </NavLink>
       </ul>
       <div className="user">
         <span>{auth.currentUser.displayName}</span>

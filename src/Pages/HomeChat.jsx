@@ -1,25 +1,28 @@
 import React from 'react'
 import Nav from '../components/Nav'
 import "../stylesheets/styles.scss"
-import TherapistProfile from '../components/TherapistProfile'
+
+
+import Therapist from './Therapist'
+import { Route, Routes } from 'react-router-dom'
+import Tips from './Tips'
+import Dairy from './Dairy'
+// import Dairy from './Dairy'
+// import "../font-awesome-4.7.0/scss/_icons.scss"
 
 const HomeChat = () => {
   return (
     <div>
       <Nav />
-      <h4>Get in-touch with a therapist below</h4>
-      <div className="therapy-container">
-        <div className="right">
-            <TherapistProfile />
-            <TherapistProfile />
-            <TherapistProfile />
-        </div>
-        <div className="left">
-            <TherapistProfile />
-            <TherapistProfile />
-            <TherapistProfile />
-        </div>
-      </div>
+      {/* <Tips /> */}
+      {/* <Therapist /> */}
+      <Dairy />
+      {/* <Route path={match.url + "/home"} element={<Therapist /> } /> */}
+      {/* <Route path={match.url + "/daily-tips"} element={<Tips /> } /> */}
+    
+      
+
+      
     </div>
   )
 }

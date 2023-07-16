@@ -1,48 +1,82 @@
 import React from "react";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faEnvelope, faPhone, faMessage } from '@fortawesome/free-solid-svg-icons'
 
 const TherapistProfile = () => {
+  const profile = [
+    {
+      id:1,
+      name: "Peter Notepad" ,
+      study: "Dr. Of Psychology" ,
+      university: "University of Boston" ,
+      details: "Specialize in child therapy and relationship counsel "
+    } ,
+    {
+      id:2,
+      name: "Moses Hyghman" ,
+      study: "Dr. Of Mental Health Nursing" ,
+      university: "University of Ghana" ,
+      details: "Counsels on depression and anxiety "
+    } ,
+    {
+      id:3,
+      name: "Ferguson Johny" ,
+      study: "Masters in Clinical Health Counseling" ,
+      university: "Hodges University" ,
+      details: "Specialize in general health counseling "
+    } ,
+  ]
+
+
   return (
     <>
     
-      <div className="profile">
+      
+          {profile.map( (profile, index) => {
+            return (
+              <>
+        <div className="profile" >
         <div className="circle">
           <img
             src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png"
             alt=""
           />
         </div>
-        <div className="info">
-          <h4>Peter Notepad</h4>
-          <span>
-            Dr. of Psychology <br />
-           <h6> University of Michagan <br />
-            Specialize in relationship counseling and <br /> child therapy  </h6>
-          </span>
+          <div className="info" >
+              <h4 key={index}>{profile.name}</h4>
+              <span >
+                {profile.study} <br />
+               <h6 > {profile.university}<br />
+                {profile.details} </h6>
+              </span>
 
-          <ul>
+              <ul>
             <li>
               <a href="https://wa.me/+233554767705?text=Hello%20there!">
-                <img src="https://www.citypng.com/public/uploads/preview/whatsapp-black-logo-icon-transparent-png-116395913941kxw8tlxvc.png" alt="" />
+                
+              <FontAwesomeIcon icon={faMessage} bounce  className="icon"/>
               </a>
             </li>
             <li>
       
               <a href="tel:+233554767705"> 
-                <img src="https://w7.pngwing.com/pngs/344/761/png-transparent-computer-icons-call-icon-cdr-text-copyright.png" alt="" />
+              <FontAwesomeIcon icon={faPhone} bounce  className="icon"/>
               </a>
             </li>
             <li>
         
               <a href="mailto:psky730@gmail.com">
-                <img
-                  src="https://e7.pngegg.com/pngimages/522/873/png-clipart-black-envelope-icon-advanced-case-management-envelope-computer-icons-icon-design-envelope-mail-miscellaneous-angle.png"
-                  alt=""
-                />
+              <FontAwesomeIcon icon={faEnvelope} bounce  className="icon"/>
               </a>
             </li>
           </ul>
+
+          </div>
         </div>
-      </div>
+              </>
+            )
+          })}
+       
     </>
   );
 };

@@ -4,6 +4,10 @@ import Home from "./components/Home";
 import { Route, Routes, BrowserRouter, Navigate} from "react-router-dom";
 import HomeChat from "./Pages/HomeChat";
 import { AuthContext } from "./context/AuthContext";
+import Therapist from './Pages/Therapist'
+import Tips from './Pages/Tips'
+import Dairy from './Pages/Dairy'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 
 function App() {
@@ -24,6 +28,9 @@ function App() {
       <Route exact path="home" element={
                   <HomeChat />
               }/>
+      <Route exact path="" element={ <Therapist />} />
+      <Route  exact path="daily-tips" element={<Tips />} />
+      <Route  exact path="dairy" element={<Dairy />} />        
         
     </Routes>
 
