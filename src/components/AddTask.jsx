@@ -33,12 +33,16 @@ const AddTask = ({onAdd}) => {
       </div>
       <div className="form-control">
         <label>Details</label>
-        <input
+        {/* <input
           type="text"
           placeholder="What do you want to write about?"
           value={day}
           onChange={(e) => setDay(e.target.value)}
-        />
+        /> */}
+        <textarea type="text"
+          placeholder="What do you want to write about?"
+          value={day}
+          onChange={(e) => setDay(e.target.value)} cols="10" rows="10"></textarea>
       </div>
       <div className="form-control form-control-check">
         <label> Set Priority </label>

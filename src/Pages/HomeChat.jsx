@@ -14,9 +14,9 @@ const HomeChat = () => {
   return (
     <div>
       <Nav />
-      {/* <Tips /> */}
-      {/* <Therapist /> */}
-      <Dairy />
+     <Therapist />
+      {/* <Tips />
+      <Dairy /> */}
       {/* <Route path={match.url + "/home"} element={<Therapist /> } /> */}
       {/* <Route path={match.url + "/daily-tips"} element={<Tips /> } /> */}
     

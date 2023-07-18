@@ -25,10 +25,8 @@ function App() {
     <Routes>
       <Route exact path="/"  element={<Home /> } /> 
        
-      <Route exact path="home" element={
-                  <HomeChat />
-              }/>
-      <Route exact path="" element={ <Therapist />} />
+      <Route exact path="home" element={   <HomeChat /> }/>
+      {/* <Route exact path="" element={ <Therapist />} /> */}
       <Route  exact path="daily-tips" element={<Tips />} />
       <Route  exact path="dairy" element={<Dairy />} />        
         

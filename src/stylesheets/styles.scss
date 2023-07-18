@@ -15,6 +15,133 @@
   }
   
 
+// get started styling on responsiveness
+  .flex-container-2 {
+
+    .left-side {
+      @include tablet {
+        height: 40%;
+        width: 80%;
+      } 
+      @include mobile {
+        height: 40%;
+        width: 80%;
+      } 
+    }
+    .right-side {
+      @include tablet {
+        height: 40%;
+        width: 80%;
+        padding: 10px;
+      } 
+      @include mobile {
+        height: 40%;
+        padding: 10px;
+        width: 90%;
+      } 
+
+      h4 {
+        @include tablet {
+          text-align: right;
+        } 
+        @include mobile {
+          text-align: right;
+        } 
+      }
+    }
+  }
+
+  //description 
+  .flex-container {
+    @include tablet {
+      height: 1200px;
+    } 
+    @include mobile {
+      border: 1px solid;
+      height: 1200px;
+    } 
+    .outerbox {
+      
+      @include tablet {
+      width: 70%;
+      margin-top: 0;
+      margin-bottom: 0;
+      } 
+      @include mobile {
+      width: 70%;
+      margin-top: 0;
+      margin-bottom: 0;
+      } 
+
+      .top , .down {
+        @include tablet {
+          margin-left: 35px;
+          width: 90%;
+        } 
+        @include mobile {
+          margin-left: 35px;
+          width: 90%;
+        } 
+      }
+    }
+
+  }
+
+  // the footer responsiveness
+  .flex-container-1 {
+    @include tablet {
+      flex-direction: column;
+    } 
+    @include mobile {
+      flex-direction: column;
+    } 
+
+    .one {
+      @include tablet {
+        width: 80%;
+        height: 1%;
+        margin-bottom: 0;
+      } 
+      @include mobile {
+        width: 80%;
+        height: 1%;
+        margin-bottom: 0;
+      } 
+      img {
+        @include tablet {
+          width: 100px;
+          height: 100px;
+          margin-left: 100px;
+          border-radius: 0 0 0 0;
+          position: absolute;
+          right: 50px;
+          border-radius: 50%;
+          object-fit: cover;
+        } 
+        @include mobile {
+          width: 100px;
+          height: 100px;
+          margin-left: 100px;
+          border-radius: 0 0 0 0;
+          position: absolute;
+          right: 50px;
+          border-radius: 50%;
+          object-fit: cover;
+        } 
+      }
+    }
+
+    .two {
+      @include tablet {
+        width: 80%;
+        height: 1%;
+        margin-bottom: 0;
+        padding: 10px;
+        text-align: center;
+      } 
+    }
+  }
+
   
   .navbar {
     margin: 0;
@@ -25,7 +152,10 @@
     padding: 10px;
     justify-content: space-between;
     color: #213547;
-    // border: 1px solid blue ;
+    
+    @include mobile {
+      
+      } 
 
     .logo {
       font-weight: bold;
@@ -52,6 +182,9 @@
             color: #213547;
             margin: 0px 20px 0px 20px;
             cursor: pointer;
+            @include mobile {
+                margin-right: 50px;
+            } 
         }
     }
 
@@ -79,6 +212,7 @@
   }
 
 
+  // styling the therapist profile
   .profile {
     height: 200px;
     width: 85%;
@@ -89,12 +223,28 @@
     box-shadow: 0.3px 0.3px 0.3px 0.3px #213547;
     cursor: pointer;
     display: flex;
+    @include tablet {
+      height: 215px;
+     }
+   @include mobile {
+    height: 215px;
+     }
 
     .circle {
         height: 80%;
         width: 32%;
         border-radius: 50%;
         margin: 20px;
+        @include tablet {
+           margin-left: -100px ;
+          //  visibility: none;
+           z-index: -1;
+          }
+        @include mobile {
+          margin-left: -100px ;
+           z-index: -1;
+          }
+
 
         img {
             object-fit: cover;
@@ -102,6 +252,16 @@
     }
 
     .info {
+      @include tablet {
+        width: 80%;
+        padding: 7px;
+        padding-left: 40px;
+       }
+
+       @include mobile {
+        width: 80%;
+        padding: 7px;
+        } 
         h4 {
                 margin-left: 0px;
                 margin-bottom: 7px;
@@ -115,22 +275,18 @@
         }
         ul {
             display: flex;
-            margin-left: 0;
-         
-            align-items: center;
-            border-radius: 10px;
-
+            // border: 1px solid ;
 
             li {
                 list-style: none;
-                margin: 0px 15px 0px 2px;
+                margin: 0px 15px 0px 0px;
 
                 .icon {
                     height: 20px;
                     width: 20px;
                     color: #213547;
                     margin-right: 10px;
-                    text-align: left;
+                  
 
                 }
             }
@@ -144,20 +300,34 @@
     flex-direction: row;
     gap: 10px;
 
-    // i {
-    //   color: #cdffd8;
-    // }
+ 
 
     .left {
         width: 50%;
         height: 100vh;
-        // border: 1px solid yellow;
+   
     }
     .right {
         width: 50%;
-        // border: 1px solid blue;
+   
     }
  }
+
+ .get-in-touch {
+  @include tablet {
+    margin-bottom: 0;
+    margin-top: 50px;
+    text-align: center;
+   }
+
+   @include mobile {
+    margin-bottom: 0;
+    margin-top: 50px;
+    text-align: center;
+    } 
+
+ }
+
 
 
  // styling on the daily tips page
@@ -166,13 +336,13 @@
   align-items: center;
   justify-content: center;
   text-align: left;
-  margin-top: 50px;
+  margin-top: 0;
   padding: 50px;
 
   .tip {
     margin-bottom: 15px;
     padding: 20px;
-    // border: 1px solid pink;
+   
     p{
       margin-top: 0;
     }
@@ -185,13 +355,15 @@
   } 
 
 
+
+
   //styling on the note or dairy page
   .container-d {
     max-width: 500px;
     margin: 30px auto;
     overflow: auto;
     min-height: 300px;
-    // border: 1px solid steelblue;
+  
     padding: 30px;
     border-radius: 5px;
 
@@ -206,6 +378,9 @@
       }
     }
 
+    textarea {
+      width: 100%;
+    }
     
 
     .btn {

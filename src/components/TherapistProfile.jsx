@@ -5,21 +5,21 @@ import { faEnvelope, faPhone, faMessage } from '@fortawesome/free-solid-svg-icon
 const TherapistProfile = () => {
   const profile = [
     {
-      id:1,
+      id:0,
       name: "Peter Notepad" ,
       study: "Dr. Of Psychology" ,
       university: "University of Boston" ,
       details: "Specialize in child therapy and relationship counsel "
     } ,
     {
-      id:2,
+      id:1,
       name: "Moses Hyghman" ,
       study: "Dr. Of Mental Health Nursing" ,
       university: "University of Ghana" ,
       details: "Counsels on depression and anxiety "
     } ,
     {
-      id:3,
+      id:2,
       name: "Ferguson Johny" ,
       study: "Masters in Clinical Health Counseling" ,
       university: "Hodges University" ,
@@ -35,45 +35,45 @@ const TherapistProfile = () => {
           {profile.map( (profile, index) => {
             return (
               <>
-        <div className="profile" >
-        <div className="circle">
-          <img
-            src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png"
-            alt=""
-          />
-        </div>
-          <div className="info" >
-              <h4 key={index}>{profile.name}</h4>
-              <span >
-                {profile.study} <br />
-               <h6 > {profile.university}<br />
-                {profile.details} </h6>
-              </span>
+        <div className="profile" key={index}>
+                      <div className="circle">
+                        <img
+                          src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png"
+                          alt=""
+                        />
+                      </div>
+                      <div className="info" >
+                          <h4>{profile.name}</h4>
+                          <span >
+                            {profile.study} <br />
+                          <h6 > {profile.university}<br />
+                            {profile.details} </h6>
+                          </span>
 
-              <ul>
-            <li>
-              <a href="https://wa.me/+233554767705?text=Hello%20there!">
-                
-              <FontAwesomeIcon icon={faMessage} bounce  className="icon"/>
-              </a>
-            </li>
-            <li>
-      
-              <a href="tel:+233554767705"> 
-              <FontAwesomeIcon icon={faPhone} bounce  className="icon"/>
-              </a>
-            </li>
-            <li>
-        
-              <a href="mailto:psky730@gmail.com">
-              <FontAwesomeIcon icon={faEnvelope} bounce  className="icon"/>
-              </a>
-            </li>
-          </ul>
+                          <ul>
+                        <li>
+                          <a href="https://wa.me/+233554767705?text=Hello%20there!">
+                            
+                          <FontAwesomeIcon icon={faMessage} bounce  className="icon"/>
+                          </a>
+                        </li>
+                        <li>
+                  
+                          <a href="tel:+233554767705"> 
+                          <FontAwesomeIcon icon={faPhone} bounce  className="icon"/>
+                          </a>
+                        </li>
+                        <li>
+                    
+                          <a href="mailto:psky730@gmail.com">
+                          <FontAwesomeIcon icon={faEnvelope} bounce  className="icon"/>
+                          </a>
+                        </li>
+                      </ul>
 
-          </div>
+                      </div>
         </div>
-              </>
+      </>
             )
           })}
        

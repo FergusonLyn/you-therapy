@@ -3,6 +3,7 @@ import { useState } from "react";
 import AddTask from '../components/AddTask';
 import Header from '../components/Header';
 import Tasks from '../components/Tasks';
+import Nav from '../components/Nav';
 
 
 const Dairy = () => {
@@ -51,6 +52,8 @@ const Dairy = () => {
   };
 
   return (
+    <>
+    <Nav />
     <div className="container-d">
       <Header showAddTask={showAddTask} onAdd={() => setShowAddTask(!showAddTask)} />
       {showAddTask && <AddTask onAdd={addTask} />}
@@ -60,6 +63,7 @@ const Dairy = () => {
         "No Tasks to show"
       )}
     </div>
+    </>
   );
 }
 
