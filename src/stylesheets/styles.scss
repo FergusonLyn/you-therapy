@@ -1,5 +1,5 @@
 @mixin mobile {
-    @media screen and (max-width: 540px) {
+    @media screen and (max-width: 480px) {
       @content;
     }
   }
@@ -13,7 +13,17 @@
       @content;
     }
   }
-  
+ 
+  body {
+    @include mobile {
+      body {
+        margin: 0;
+        min-width: 100vh;
+        min-height: 100vh;
+        background-image: linear-gradient(90deg,#cdffd8 , #94b9ff);
+      }
+    }
+  }
 
 // get started styling on responsiveness
   .flex-container-2 {

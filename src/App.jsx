@@ -8,6 +8,7 @@ import Therapist from './Pages/Therapist'
 import Tips from './Pages/Tips'
 import Dairy from './Pages/Dairy'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import "./stylesheets/styles.scss"
 
 
 function App() {
