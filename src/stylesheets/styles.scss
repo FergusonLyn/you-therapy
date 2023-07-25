@@ -21,34 +21,34 @@
         min-width: 100vh;
         min-height: 100vh;
         background-image: linear-gradient(90deg,#cdffd8 , #94b9ff);
+        color: #213547;
+        // overflow-x: hidden;
       }
     }
   }
 
 // get started styling on responsiveness
   .flex-container-2 {
+    margin: 0;
+
 
     .left-side {
-      @include tablet {
-        height: 40%;
-        width: 100%;
-      } 
       @include mobile {
         height: 40%;
         width: 100%; 
-
       } 
 
       img {
         @include mobile {
+          visibility: hidden;
           border-radius: 50%;
           width: 100px;
-          height: 90px;
-         margin-right: 290px;
-         &:hover {
-          cursor: pointer;
-          box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.1)
-         }
+          height: 1px;
+        
+        //  &:hover {
+        //   cursor: pointer;
+        //   box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.1)
+        //  }
         } 
       }
     }
@@ -59,30 +59,34 @@
         padding: 10px;
       } 
       @include mobile {
-        height: 40%;
+        height: 330px;
         padding: 10px;
         width: 100%;
-  
-     
+       
       } 
-      p {
+      .text {
         @include mobile {
-          margin-top: 5px;
+          margin-top: 20px;
           height: 40%;
           padding: 10px;
           width: 90%;
-  
-          text-align: left;
+          font-size: 40px;
+          text-align: center;
           margin: 5px;
+          margin-top: 50px;
           
+          .therapy {
+            font-size: 45px;
+          }
         } 
+
       }
       button {
         @include mobile {
-          height: 40%;
+          width: 60%;
           padding: 10px;
-        
-          margin-right: 240px;
+          margin-top: 130px;
+          
         } 
       }
 
@@ -99,11 +103,8 @@
 
   //description 
   .flex-container {
-    @include tablet {
-      height: 1200px;
-    } 
     @include mobile {
-  
+      margin-top: 0;
       height: 1200px;
     } 
     .outerbox {
@@ -114,9 +115,11 @@
       margin-bottom: 0;
       } 
       @include mobile {
-      width: 100%;
+      width: 82%;
       margin-top: 0;
       margin-bottom: 0;
+      padding: 0px 50px 50px 0px;
+    
       } 
 
       .top , .down {
@@ -125,8 +128,10 @@
           width: 90%;
         } 
         @include mobile {
-          margin-left: 35px;
-          width: 90%;
+          margin-left: 20px;
+          width: 100%;
+       
+
         } 
       }
     }
@@ -135,60 +140,49 @@
 
   // the footer responsiveness
   .flex-container-1 {
-    @include tablet {
-      flex-direction: column;
-    } 
+    
     @include mobile {
       flex-direction: column;
     } 
 
     .one {
-      @include tablet {
-        width: 80%;
-        height: 1%;
-        margin-bottom: 0;
-      } 
       @include mobile {
         width: 80%;
         height: 1%;
         margin-bottom: 0;
       } 
       img {
-        @include tablet {
-          width: 100px;
-          height: 100px;
-          margin-left: 100px;
-          border-radius: 0 0 0 0;
-          position: absolute;
-          right: 50px;
-          border-radius: 50%;
-          object-fit: cover;
-        } 
         @include mobile {
-          width: 100px;
-          height: 100px;
-          margin-left: 100px;
+          width: 80px;
+          height: 80px;
+          margin-right: 250px;
           border-radius: 0 0 0 0;
           position: absolute;
           right: 50px;
           border-radius: 50%;
           object-fit: cover;
+          // visibility: hidden;
         } 
       }
     }
 
     .two {
-      @include tablet {
-        width: 100%;
+      @include mobile {
+       
+        width: 80%;
         height: 1%;
         margin-bottom: 0;
         padding: 10px;
         text-align: left;
+       
       } 
+      h1 {
+        font-size: 32px;
+      }
     }
   }
 
-  
+
   .navbar {
     margin: 0;
     display: flex;
