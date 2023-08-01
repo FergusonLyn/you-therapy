@@ -9,6 +9,7 @@ import Tips from './Pages/Tips'
 import Dairy from './Pages/Dairy'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import "./stylesheets/styles.scss"
+import Chat from "./Pages/Chat"
 
 
 function App() {
@@ -30,8 +31,11 @@ function App() {
       {/* <Route exact path="" element={ <Therapist />} /> */}
       <Route  exact path="daily-tips" element={<Tips />} />
       <Route  exact path="dairy" element={<Dairy />} />        
+      <Route  exact path="chat" element={<Chat />} />        
         
     </Routes>
+    // <Chat />
+   
 
     // <HomeChat />
   );

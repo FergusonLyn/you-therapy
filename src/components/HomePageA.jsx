@@ -46,6 +46,7 @@ const HomePageA = () => {
           </div>
         </div>
         <div className="left-side">
+      
           <img
             src="https://energyresourcing.com/wp-content/uploads/2022/07/mental-health-wellness-during-covid-19.jpg"
             alt=""

@@ -17,6 +17,7 @@ const Nav = () => {
         <NavLink to="/home"> <li>Home</li> </NavLink>
         <NavLink to="/daily-tips"> <li>  Daily tips  </li> </NavLink>
         <NavLink to="/dairy"> <li>Dairy</li> </NavLink>
+        {/* <NavLink to="/chat"> <li>Chat</li> </NavLink> */}
       </ul>
       <div className="user">
         <span>{auth.currentUser.displayName}</span>

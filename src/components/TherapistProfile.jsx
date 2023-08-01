@@ -52,7 +52,8 @@ const TherapistProfile = () => {
 
                           <ul>
                         <li>
-                          <a href="https://wa.me/+233554767705?text=Hello%20there!">
+                          <a href="https://unique-kangaroo-90b738.netlify.app/">
+                          {/* <a href="https://wa.me/+233554767705?text=Hello%20there!"> */}
                             
                           <FontAwesomeIcon icon={faMessage} bounce  className="icon"/>
                           </a>
